@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - marr</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html><head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"> </script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"><link rel="stylesheet" href="https://use.typekit.net/dlu8yuc.css"><script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script> 
+    
+      <script>
+    (function($){
+    $(document).ready(function() {
+    $("a[title]").style_my_tooltips({
+    tip_follows_cursor:false,
+    tip_delay_time:90,
+    tip_fade_speed:600,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+    </script><script>
+    (function($){
+    $(document).ready(function() {
+    $("img[title]").style_my_tooltips({
+    tip_follows_cursor:false,
+    tip_delay_time:90,
+    tip_fade_speed:600,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+    </script>
+    </head>
+     
+      <body>
+        <div id="container"><link href="//fonts.googleapis.com/css?family=Vollkorn|Poppins:500" rel="stylesheet">
+
+<!----- 【 MUSIC PLAYER #08 by @glenthemes 】 ----->
+<link href="//glen-players.gitlab.io/08/setup.css" rel="stylesheet">
+<script src="//glen-players.gitlab.io/08/init.js"></script>
+<div glenplayer08>
+	<img album-image src="https://xatimg.com/image/o8Qo8eZYeV3l.gif">
+	
+	<div music-info>
+		<div song-name></div>
+		<div artist-name></div>
+	</div><!--don't delete this line :)-->
+	
+	<audio src="assets/emmotions.mp3" volume="95%"></audio>
+</div><!--don't delete this line-->
+<!---- END MUSIC PLAYER ----><div class="mtitle"><a target="_blank" href="/"><b>you</b></a><i>got me feeling</i><big>higher</big> 
+    </div> 
+    
+    <div class="desc">you've got me  <i>feeling</i> emotions <b>deeper</b> than i've ever dreamed of. <i>you are</i> the first thing on my mind. it <b>feel</b> like a dream when u<i>love me</i> tenderly & i love the way<i>i feel</i> inside ~ </div>
+          
+
+          
+<div id="pagination"></div>
+    <div class="tab"><a target="_blank" href="https://xat.com/blog" class="tablink" title="home.">i.
+    </a><a target="_blank" href="https://forum.xat.com/profile/58610/" class="tablink" title="contact me.">ii.</a><a class="tablink" onclick="openPage('navigate')" title="more.">iii.</a></div>
+    
+    <!-- BEGIN NAV TAB --><div id="navigate" class="tabcontent"> <span onclick="this.parentElement.style.display='none'" class="tabsclose"><span class="bi bi-hand-index"></span></span><div class="navlink"><a target="_blank" href="https://xat.me/dafos"><span class="bi bi-folder2-open"></span> <B>dem.</B></a><br><a target="_blank" href="https://xat.me/naez"><span class="bi bi-folder2-open"></span> <B>naez.</B></a><br><a target="_blank" href="https://xat.me/araceli"><span class="bi bi-folder2-open"></span> <B>ara.</B></a><br><a target="_blank" href="https://xat.me/fashiondealer"><span class="bi bi-folder2-open"></span> <B>eribb.</B></a><br><a target="_blank" href="https://xat.me/lobitha"><span class="bi bi-folder2-open"></span> <B>lobitha.</B></a><br><a target="_blank" href="https://xat.me/idady"><span class="bi bi-folder2-open"></span> <B>dady.</B> </a></div><div class="navtitle"><i>you</i> make me <i>feel</i> so <b>high</b></div><div class="navdesc">
+        i <i>feel</i> good. i  <i>feel</i> nice. i've never felt so  <b>satisfied</b> i'm in <big>love</big>, i'm alive <b>Intoxicated</b> . Flying high <3.
+    </div><div class="navooc">
+        mar , scorpio , argentina
+    </div></div>
+</div>
+        
+        
+        <div id="credit" data="credit"><a target="_blank" href="https://ibb.co/album/spj8FW" title="check!"><span class="bi bi-heart"></span></a></div>
+    
+       
+       
+        <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablink;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";}
+    
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+    
+      document.getElementById(pageName).style.display = "block";
+      
+      elmnt.style.backgroundColor = color;
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+        
+        <script>
+    $(document).ready(function(){
+      $(".tablink").click(function(){
+            $(".notes").hide();
+             $(".posts").hide();
+             $(".tags").hide();
+             $(".mtitle").hide();
+             $("#pagination").hide();
+      });
+      $(".tabsclose").click(function(){
+            $(".notes").show();
+            $(".posts").show();
+            $(".tags").show();
+           $(".mtitle").show();
+            $("#pagination").show();
+      });
+    });
+    </script>
+        
+<!-- BEGIN PARAGRAPH FILTER SCRIPT --><script>
+        $(document).ready(function() {
+      $('p').each(function() {
+        if ($(this).html().trim() === '') {
+          $(this).remove();
+        }
+      });
+    });
+    </script>
+        
+        
+<!-- BEGIN EMPTY CAPTION FILTER SCRIPT --><script>
+        $(document).ready(function() {
+      $('div.caption').each(function() {
+        if ($(this).text().trim() === '') {
+          $(this).remove();
+        }
+      });
+    });
+    </script>
+          </body></html>
+<!-- partial -->
+  
+</body>
+</html>
