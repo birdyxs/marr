@@ -42,10 +42,11 @@ body {
     vertical-align:middle;
     margin:0px;
     padding:0px;
-    background-image:url('/');
+    background-image:url('https://64.media.tumblr.com/bbe95ff33ba642e35968ccc42ad454b5/c1ab75dd811a75b4-ca/s2048x3072/048e4d245947f11109277f043f6c925aa6a8a135.gif');
     background-size:repeat;
 }
 
+ *, body, img { cursor:url(https://secure.static.tumblr.com/vmteopo/Eggo12azo/small_white_cursor.png), auto;}
 
 big {
     font-family: ouma-latin-variable, sans-serif; font-size:25px;
