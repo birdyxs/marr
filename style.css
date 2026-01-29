@@ -1,0 +1,139 @@
+@font-face { 
+            font-family: 'cocogoose';
+            src: url('https://static.tumblr.com/evdci5g/scRqwgw7l/cocogoose_pro_light-trial-webfont.woff') format('woff');
+        }
+
+        body {
+            background-color: #121212;
+            background-image: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('https://i.ibb.co/B5K8XGXt/b59bc8.png');
+            background-size: 300px;
+            font-family: 'ABeeZee', sans-serif;
+            font-size: 11px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            color: #e0e0e0;
+        }
+
+        #sidebar {
+            background: #1e1e1e;
+            width: 320px;
+            height: 150px;
+            position: relative; 
+            border-radius: 12px;
+            border: 1px solid #333;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            padding: 25px 20px 20px 20px;
+            box-sizing: border-box;
+            cursor: grab;
+        }
+
+        .top-links {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-links a {
+            color: #bb86fc;
+            font-size: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+
+        .top-links a:hover { 
+            transform: scale(1.2); 
+            color: #cf6679;
+            opacity: 1;
+        }
+
+        .profile-content {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .avatar-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 2px solid #333;
+            pointer-events: none;
+            display: block;
+            filter: brightness(0.9);
+        }
+
+        .status-heart {
+            position: absolute;
+            bottom: 5px;
+            right: 18px;
+            color: #ff4053;
+            font-size: 16px;
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.6);
+            animation: heartPulse 1.5s infinite ease-in-out;
+        }
+
+        .text-area {
+            flex-grow: 1;
+        }
+
+        .title {
+            font-size: 15px;
+            color: #babccc; 
+            font-family: 'cocogoose', sans-serif;
+            font-weight: bold;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+        }
+
+        .title b {
+            font-size: 10px;
+            color: #bb86fc;
+            font-family: 'ABeeZee', sans-serif;
+            display: block;
+            margin-top: 4px;
+            font-weight: normal;
+        }
+
+        .bottom-controls {
+            margin-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-player, .mail-link {
+            color: #bb86fc;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-player { font-size: 18px; width: 20px; text-align: center; }
+        .mail-link { font-size: 20px; }
+
+        .btn-player:hover, .mail-link:hover {
+            color: #7a7385;
+            transform: translateY(-2px);
+        }
+
+        #pause-icon { display: none; }
+
+        @keyframes heartPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
