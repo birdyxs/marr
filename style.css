@@ -5,8 +5,8 @@
 
         body {
     background-color: #121212;
-    background-image: linear-gradient(rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.6)), url('https://i.ibb.co/B5K8XGXt/b59bc8.png');
-    background-size: 250px; 
+    background-image:url('https://i.ibb.co/svh87srV/rstars500.gif');
+    background-size: 600px; 
     font-family: 'ABeeZee', sans-serif;
     font-size: 11px;
     margin: 0;
@@ -15,13 +15,12 @@
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
-    color: #e0e0e0;
-}
+          color: #e0e0e0;}
 
         #sidebar {
             background: #1e1e1e;
             width: 320px;
-            height: 150px;
+            height: 160px;
             position: relative; 
             border-radius: 12px;
             border: 1px solid #333;
@@ -40,7 +39,7 @@
         }
 
         .top-links a {
-            color: #bb86fc;
+            color: #8a6276;
             font-size: 10px;
             text-decoration: none;
             transition: 0.3s;
@@ -65,8 +64,8 @@
         }
 
         .avatar {
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             margin-right: 15px;
             object-fit: cover;
@@ -80,7 +79,7 @@
             position: absolute;
             bottom: 5px;
             right: 18px;
-            color: #ff4053;
+            color: #c2344e;
             font-size: 16px;
             text-shadow: 0 0 10px rgba(255, 64, 129, 0.6);
             animation: heartPulse 1.5s infinite ease-in-out;
@@ -101,7 +100,7 @@
 
         .title b {
             font-size: 10px;
-            color: #bb86fc;
+            color: #8c5a73;
             font-family: 'ABeeZee', sans-serif;
             display: block;
             margin-top: 4px;
@@ -117,7 +116,7 @@
         }
 
         .btn-player, .mail-link {
-            color: #bb86fc;
+            color: #8a6276;
             cursor: pointer;
             transition: 0.3s;
             text-decoration: none;
@@ -137,3 +136,15 @@
             0%, 100% { transform: scale(1); opacity: 1; }
             50% { transform: scale(1.2); opacity: 0.8; }
         }
+          
+    animation: moveBackground 99s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 600px 600px;
+    }
+}
